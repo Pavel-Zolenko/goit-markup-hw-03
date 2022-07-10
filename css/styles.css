@@ -24,7 +24,6 @@ body {
     text-decoration: none;
 }
 .container {
-    display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -67,9 +66,11 @@ img {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+    
      }
 .container-nav {
     align-items: center;
+    display: flex;
     
 }
 .logo {
@@ -87,10 +88,13 @@ span {
 .logo:focus {
     color: var(--accent-color);
 }
+.main-nav {
+margin-left: 93px;
+}
+
 .site-nav {
     display: flex;
-    margin-left: 93px;
-}
+    }
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -111,9 +115,16 @@ color: var(--accent-color);
 .auth-nav {
     display: flex;
     margin-left: auto;
+    
+}
+.auth-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .auth-nav .item + .item {
     margin-left: 50px;
+    
 }
 .contacts {
     color: var(--primary-txt-cl)
@@ -127,7 +138,8 @@ color: var(--accent-color);
 .hero {
     background-color: var(--primary-bg-cl);
     text-align: center;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero .title {
     color: #FFFFFF;
@@ -136,11 +148,11 @@ color: var(--accent-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40xp;
     
-    padding-top: 200px;
-    padding-right: 452px;
-    padding-left: 452px;
-    margin: 0;
 }   
 .btn-hero {
     color: var(--white-cl);
@@ -165,7 +177,9 @@ color: var(--accent-color);
     background-color: var(--accent-color);
 }
 /* Benefits */
-
+.Benefits-list {
+    display: flex;
+}
 
 .Benefits .title {
     color: var(--title-txt-cl);
@@ -188,13 +202,17 @@ margin-right: 30px;
 }
 
 /* section чем мы занимаемся */
+.work .section {
+padding-bottom: 94px;
+}
 .work-title,
 .team-title {
     color: var(--title-txt-cl);
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    align-self: center;
+    text-align: center;
+    
   
 }
 .work-list {
@@ -252,7 +270,9 @@ margin-right: 30px;
 
 /* footer */
 .footer {
-    background-color: var(--primary-bg-cl)
+    background-color: var(--primary-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-container {
     flex-direction: column;
@@ -265,8 +285,7 @@ margin-right: 30px;
     font-size: 26px;
     line-height: calc(31 /26);
     letter-spacing: 0.03em;
-    padding-top: 60px;
-    margin-bottom: 20px;
+    
 }
 .logo-footer:hover,
 .logo-footer:focus {
@@ -294,20 +313,13 @@ margin-right: 30px;
 }
  address {
     font-style: normal;
+    margin-top: 20px;
  }  
  address li +.item {
     margin-top: 9px;
  }
- address li:last-child {
-    padding-bottom: 60px;
- }
- 
    
 /* ----- portfolio page----------*/
-.portfolio-container {
-    flex-direction: column;
-}
-
 
 /* ------button list---- */
 .btn {
@@ -321,13 +333,13 @@ margin-right: 30px;
 }
 .portfolio-btn {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn .item+.item {
-    margin-left: 30px;
-    margin-bottom: 50px;
+    margin-left: 8px;
+    
 }
 .portfolio-btn .btn {
     padding: 6px 22px;
@@ -342,7 +354,7 @@ margin-right: 30px;
  }
 /* -----portfolio list----- */
 .portfolio-list .item{
-    max-width: 370px;
+    width: 370px;
 }
 
 .portfolio-title {
@@ -350,18 +362,13 @@ margin-right: 30px;
     line-height: calc(36 / 18);   
     letter-spacing: 0.06em;
     color: var(--title-txt-cl);
-    margin-top: 20;
-    margin-left: 24px;
-    margin-right: 24px;
     margin-bottom: 4px;
 }
 .portfolio-text {
     color: var(--primary-txt-cl);
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 20px;
+  
 }
 .portfolio-list {
     display: flex;
@@ -371,8 +378,8 @@ margin-right: 30px;
 .portfolio-wrapper {
     border: 1px solid #EEEEEE;
     border-top: none;
-    width: 370;
-    
+    padding: 20px 24px;
+
 }
 
 
